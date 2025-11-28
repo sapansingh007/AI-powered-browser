@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:share_plus/share_plus.dart';
 import '../../core/constants/app_constants.dart';
 import '../../domain/entities/summary.dart';
 import '../providers/summary_provider.dart';
@@ -283,7 +282,7 @@ class _SummaryPanelState extends ConsumerState<SummaryPanel> {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          SizedBox(
+          const SizedBox(
             width: 16,
             height: 16,
             child: CircularProgressIndicator(
